@@ -6,17 +6,16 @@
 
     <groupId>com.github.swmr71</groupId>
     <artifactId>RePlugin</artifactId>
-    <version>2.0.1</version>
-    <packaging>jar</packaging>
+    <version>2.0.2</version> <packaging>jar</packaging>
 
     <name>RePlugin</name>
     <description>Automatic resource pack distributor</description>
 
-		<scm>
-		    <connection>scm:git:git://github.com/swmr71/RePlugin.git</connection>
-		    <developerConnection>scm:git:ssh://github.com:swmr71/RePlugin.git</developerConnection>
-		    <url>https://github.com/swmr71/RePlugin</url>
-		</scm>
+    <scm>
+        <connection>scm:git:git://github.com/swmr71/RePlugin.git</connection>
+        <developerConnection>scm:git:ssh://github.com:swmr71/RePlugin.git</developerConnection>
+        <url>https://github.com/swmr71/RePlugin</url>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,7 +31,6 @@
     </repositories>
 
     <dependencies>
-        <!-- Paper API -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -42,6 +40,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -51,26 +55,14 @@
                     <release>21</release>
                 </configuration>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.2.0</version>
-                <configuration>
-                    <resources>
-                        <resource>
-                            <directory>src/main/resources</directory>
-                            <filtering>true</filtering>
-                        </resource>
-                    </resources>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
-		<distributionManagement>
-		    <repository>
-		        <id>github</id> <name>GitHub Packages</name>
-		        <url>https://maven.pkg.github.com/swmr71/RePlugin</url>
-		    </repository>
-		</distributionManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/swmr71/RePlugin</url>
+        </repository>
+    </distributionManagement>
 </project>
