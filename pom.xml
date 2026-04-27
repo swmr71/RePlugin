@@ -12,6 +12,12 @@
     <name>RePlugin</name>
     <description>Automatic resource pack distributor</description>
 
+		<scm>
+		    <connection>scm:git:git://github.com/swmr71/RePlugin.git</connection>
+		    <developerConnection>scm:git:ssh://github.com:swmr71/RePlugin.git</developerConnection>
+		    <url>https://github.com/swmr71/RePlugin</url>
+		</scm>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
