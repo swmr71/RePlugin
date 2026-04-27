@@ -1,0 +1,15 @@
+# RePlugin - packs.yml
+# 個別パック設定
+# URLはここで完全上書きできる
+
+packs:
+  # GitHub Releases から取得したもの
+  my-texture-pack.zip:
+    enabled: true
+    url: "https://www.example.com/resourcepacks/my-texture-pack.zip"
+  
+
+# グローバル設定
+global:
+  # プレイヤーが拒否した場合の処理
+  reject-action: "warn"  # "warn" or "kick"

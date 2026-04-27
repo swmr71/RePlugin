@@ -1,0 +1,5 @@
+net\clusters_prj\replugin\ResourcePackServer$ResourcePackHandler.class
+net\clusters_prj\replugin\RePlugin.class
+net\clusters_prj\replugin\ResourcePackInfo.class
+net\clusters_prj\replugin\ResourcePackManager.class
+net\clusters_prj\replugin\ResourcePackServer.class

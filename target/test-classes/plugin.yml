@@ -1,0 +1,11 @@
+name: RePlugin
+version: 1.0.0
+description: Automatic resource pack distributor from GitHub Releases and local folders
+author: clusters-prj
+main: net.clusters_prj.replugin.RePlugin
+
+commands:
+  replugin:
+    description: RePlugin commands
+    usage: /replugin <reload|list|test>
+    aliases: [rp]

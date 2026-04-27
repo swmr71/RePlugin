@@ -1,0 +1,24 @@
+# RePlugin - config.yml
+# GitHub Releasesの設定
+
+github:
+  enabled: true
+  sources:
+    - owner: "your-user"
+      repo: "your-repo"
+      tag: "v1.0.0"
+      filename: "bgm-pack.zip"
+
+# ローカルリソースパック配信サーバー設定
+server:
+  host: "localhost"
+  port: 8765
+  serve-path: "/"              # プラグイン内サーバーが配信するパス
+
+# クライアント側で使用するURL
+client:
+  base-url: "http://localhost:8765/"  # クライアントがアクセスするURL (Nginxでプロキシする場合は上書き)
+
+# パック配布設定
+packs:
+  send-interval: 20  # Tick単位 (20 = 1秒)
