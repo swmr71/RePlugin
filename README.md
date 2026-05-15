@@ -13,7 +13,7 @@ GitHub Releasesとローカルフォルダからリソースパックを自動�
 ## セットアップ
 
 ### 1. プラグインの構築
-
+** 注意 ** バージョン変更時は、plugin.ymlも変更すること。
 ```bash
 mvn clean package
 ```
